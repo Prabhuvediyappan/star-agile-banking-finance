@@ -19,7 +19,7 @@ resource "aws_vpc" "proj-vpc" {
 
 # Create an Internet Gateway
 resource "aws_internet_gateway" "proj-ig" {
- vpc_id = aws_vpc.proj-vpc.id
+vpc_id = aws_vpc.proj-vpc.id
  tags = {
  Name = "gateway1"
  }
